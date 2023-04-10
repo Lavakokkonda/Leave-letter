@@ -111,7 +111,7 @@ function alldetailsoutput() {
 
 function handleKeyPress(e) {
   var key = e.keyCode || e.which;
-  if (key === 13 || key === 32) {
+  if (key === 13) {
     // 13 is the code for Enter key
     // randomm();
     document.querySelector("#submitbutton").click();
