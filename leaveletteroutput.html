@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./leaveletter.js" defer></script>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      body{
+        background-color: #F0FFF0;
+      }
+      #cont {
+        width: 60%;
+        /* height: 120vh; */
+        /* border: 2px solid black; */
+        padding-top: 8px;
+        margin-left: 20%;
+        margin-top: 10px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
+      }
+      p{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 5px;
+      }
+      .a {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        /* text-align: justify; */
+        line-height: 25px;
+      }
+      #mainhead {
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body
+    onload="retrivecolor(), retrivesize(), retiveBackgroundColor(), alldetailsoutput(),retrivetextcolor(),retivetextalign()"
+  >
+    <div id="cont">
+      <h1 id="mainhead">Leaveletter</h1>
+      	<p>Date: <strong><span id="todaydateoutput"></span></strong></p>
+      <p>To,</p>
+      <p id="toNamee"></p>
+      <p>ABC Company,</p>
+      <p id="toAddresss"></p>
+      <br />
+      <p>Dear <span id="sirmademm"></span></p>
+      <p><strong>Subject :</strong> <span id="subjectoutput"></span></p>
+      <p class="a">
+        I am writing this letter to request a leave of absence from work for a
+        certain period of time. I need to take this leave <span id="reasonoutput"></span>
+      </p>
+      <p class="a">
+        I would like to request a leave of absence starting from
+        <strong><span id="fromdatee"></span></strong> and ending on <strong><span id="todatee"></span></strong>.
+        During my absence, I will ensure that all my pending work is completed
+        and I will hand over all the necessary information and responsibilities
+        to my colleague, <strong><span id="colleaguenamee"></span></strong>.
+      </p>
+      <p class="a">
+        I will be available via email or phone during this time if there is any
+        emergency or important issue that requires my attention. I assure you
+        that I will resume my work as soon as I return from my leave and will
+        make sure that there is no delay in the completion of any ongoing
+        projects.
+      </p>
+      <p class="a">
+        Thank you for considering my request for leave. I look forward to your
+        positive response.
+      </p>
+      <br />
+      <p>Sincerely,</p>
+      <p id="yourname"></p>
+      <p id="youraddress"></p> <br> <br> <br>
+    </div>
+  </body>
+</html>
